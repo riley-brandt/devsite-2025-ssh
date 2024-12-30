@@ -1,0 +1,7 @@
+# local gitignore in root foler
+
+# ignore ALL .log files
+*.log
+
+# ignore ALL files in ANY directory named temp
+img/Gallery-Images-Full-Res
