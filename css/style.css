@@ -307,8 +307,8 @@ nav {
   justify-content: center;
   align-content: center;
   gap: 2rem;
-  background-color: #fffec5;
-  /* background-color: #e4e4e4; */
+  /* background-color: #fffec5; */
+  background-color: #f45050;
   border-radius: 10px;
   padding: 1rem;
   margin: 0.5rem;
@@ -329,6 +329,79 @@ nav {
   border-radius: 10px;
   padding: 1rem;
   margin: 0.5rem;
+}
+
+.hp-bio-container > h1 {
+  color: #666;
+}
+
+/* ====== BODY FLEX CONTAINERS ====== */
+
+.character-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 20px 0;
+  background-color: #e4e4e4;
+  border-radius: 10px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.character-1400px {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  width: 1400px;
+}
+
+.card-content {
+  padding: 1em;
+  width: 360px;
+  background-color: #ffffff;
+  margin: 0.6em;
+  border-radius: 6px;
+  box-shadow: 1px 2px 2px #c6c6c6;
+}
+
+.card-content > h2 {
+  text-align: center;
+  color: #f45050;
+}
+
+.card-highlight {
+  width: 330px;
+  height: 140px;
+  /* background-color: #f45050; */
+  background-color: #f9d949;
+  align-content: center;
+  text-align: center;
+}
+
+.pulledquote {
+  display: block;
+  padding: 0 4rem 0 1rem;
+  margin: 0 0 10px 10px;
+  font-size: 2.6em;
+  font-style: italic;
+  line-height: 1.4em;
+  color: #666;
+  border-left: 3px solid #ccc;
+}
+
+/* .character-1400px div {
+  padding: 1em;
+  width: 360px;
+  background-color: #ffffff;
+  margin: 1em;
+  border-radius: 6px;
+  box-shadow: 1px 2px 2px #c6c6c6;
+} */
+
+.card-img {
+  background-color: red;
 }
 
 /* ========== LIGHTBOX GALLERY ========= */
