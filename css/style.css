@@ -87,6 +87,9 @@ footer {
   color: white;
   border-radius: 0 0 10px 10px;
   gap: 1rem;
+
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .footer-item {
@@ -258,6 +261,18 @@ nav {
   background-image: url(../img/homepage/calgary-temp.jpg);
 }
 
+.insta-photo-02 {
+  flex: 30%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  /* border-radius: 0 10px 10px 0; */
+  background-image: url(../img/homepage/riley-shooting-500px.jpg);
+}
+
 .insta-text {
   flex: 50%;
   display: flex;
@@ -268,6 +283,18 @@ nav {
   background-color: #13293d;
   color: white;
   border-radius: 10px 0 0 10px;
+}
+
+.insta-text-02 {
+  flex: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: #13293d;
+  color: white;
+  /* border-radius: 10px 0 0 10px; */
 }
 
 .insta-text button {
@@ -293,7 +320,7 @@ nav {
 .pull-quote {
   color: white;
   background: radial-gradient(#44577b, 50%, #384b70 100%);
-  font-size: 2rem;
+  font-size: 1rem;
   padding: 0.1rem 2rem 0.1rem 2rem;
   margin: 1rem 0.5rem 1rem 0.5rem;
   border-radius: 10px;
@@ -337,7 +364,7 @@ nav {
 
 /* ====== BODY FLEX CONTAINERS ====== */
 
-.character-containers {
+.card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -349,17 +376,16 @@ nav {
   margin-right: 0.5rem;
 }
 
-.character-1400px {
+.card-bg-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* align-items: center; */
   width: 1400px;
 }
 
 .card-content {
   padding: 1em;
-  width: 360px;
+  width: 300px;
   background-color: #ffffff;
   margin: 0.6em;
   border-radius: 6px;
@@ -369,26 +395,23 @@ nav {
 .card-content > h2 {
   text-align: center;
   color: #f45050;
+  /* color: #a52a2a; */
 }
 
 .card-highlight {
-  width: 330px;
+  width: 270px;
   height: 140px;
-  /* background-color: #f45050; */
   background-color: #f9d949;
   align-content: center;
   text-align: center;
 }
 
 .pulledquote {
-  display: block;
-  padding: 0 4rem 0 1rem;
-  margin: 0 0 10px 10px;
-  font-size: 2.6em;
+  margin-left: 2rem;
+  margin-right: ;1rem;
+  font-size: 2em;
   font-style: italic;
-  line-height: 1.4em;
-  color: #666;
-  border-left: 3px solid #ccc;
+  /* line-height: 1.4em; */
 }
 
 /* .character-1400px div {
