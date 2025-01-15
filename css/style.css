@@ -246,7 +246,8 @@ nav {
 .insta-profile {
   display: flex;
   flex-wrap: wrap;
-  margin: 0.5rem;
+  margin: 0.5rem 0.5rem 0rem 0.5rem;
+  /* margin: 0.5rem; */
 }
 
 .insta-photo {
@@ -292,7 +293,9 @@ nav {
   align-items: center;
   font-size: 1rem;
   padding: 1rem 2rem 1rem 2rem;
-  background-color: #13293d;
+  background-color: #2a628f;
+  /* background-color: #13293d; */
+
   color: white;
   /* border-radius: 10px 0 0 10px; */
 }
@@ -374,6 +377,7 @@ nav {
   border-radius: 10px;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .card-bg-container {
@@ -408,10 +412,16 @@ nav {
 
 .pulledquote {
   margin-left: 2rem;
-  margin-right: ;1rem;
+  margin-right: 1rem;
   font-size: 2em;
   font-style: italic;
-  /* line-height: 1.4em; */
+  text-align: center;
+  padding: 0 1rem 0 1rem;
+
+  /* background-color: #13293d;
+  border-style: solid;
+  border-color: #e6e7e9;
+  border-radius: 120px; */
 }
 
 /* .character-1400px div {
