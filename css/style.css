@@ -75,26 +75,30 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-
-  /* align-items: flex-start;
-  justify-content: end; */
-
+  justify-content: space-between;
   max-width: 1400px;
   min-width: 320px;
   min-height: 200px;
-  padding: 1.4em;
+  padding: 0 1.4rem 1.4rem 2rem;
   background-color: #13293d;
   color: white;
   border-radius: 0 0 10px 10px;
   gap: 1rem;
+  margin: 0.5rem 0.5rem 0 0.5rem;
 
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  /* align-items: end; */
 }
 
 .footer-item {
-  flex: 30%;
-  /* background-color: grey; */
+  width: 300px;
+}
+
+.footer-item-logo {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 300px;
+
 }
 
 /* ========== HEADER ========= */
@@ -264,13 +268,12 @@ nav {
 
 .insta-photo-02 {
   flex: 30%;
-  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
   min-height: 400px;
-  /* border-radius: 0 10px 10px 0; */
+  border-radius: 10px 0 0 10px;
   background-image: url(../img/homepage/riley-shooting-500px.jpg);
 }
 
@@ -294,10 +297,8 @@ nav {
   font-size: 1rem;
   padding: 1rem 2rem 1rem 2rem;
   background-color: #2a628f;
-  /* background-color: #13293d; */
-
   color: white;
-  /* border-radius: 10px 0 0 10px; */
+  border-radius: 0 10px 10px 0;
 }
 
 .insta-text button {
