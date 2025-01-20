@@ -99,9 +99,9 @@ footer {
   width: 300px;
 }
 
-.footer-item h3 {
+/* .footer-item h3 {
   color: #fff4a3;
-}
+} */
 
 /* ========== HEADER ========= */
 
@@ -331,8 +331,9 @@ nav {
 }
 
 .insta-text button:hover {
+  background-color: #ffeb5e;
   /* background-color: white; */
-  background-color: #fed33f;
+  /* background-color: #fed33f; */
 }
 
 /* ====== BULLET POINT CARD CONTAINERS ====== */
