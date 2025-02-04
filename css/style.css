@@ -143,6 +143,16 @@ header .logo img {
   display: block;
 }
 
+/* ============ PAGE CONTENT FORMATTING ============ */
+
+.about-container {
+  margin: 2rem 0.5rem 0rem 0.5rem;
+}
+
+.contact-container {
+  margin: 2rem 0.5rem 0rem 0.5rem;
+}
+
 /* ========== NAVIGATION BAR ========= */
 
 .nav-logo {
@@ -254,18 +264,6 @@ nav {
   padding: 1.4em;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   border-radius: 10px 10px 0 0;
-} */
-
-/* ========== HERO IMAGE ========= */
-/* 
-.hero-img-container {
-  margin-top: 2rem;
-  background-image: url("../img/homepage/img_climb_1600x600-01.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  height: 460px;
 } */
 
 /* ========== INSTA PHOTO AND TEXT ========= */
