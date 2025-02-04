@@ -30,16 +30,33 @@
 }
 
 html {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
 
+/* === Local Roboto Fonts | weight doesn't work in FF === */
+
+/* @font-face {
+  font-family: "robotoregular";
+  src: url(../fonts/roboto-regular-webfont.woff2) format("woff2"),
+    url(../fonts/roboto-regular-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* @font-face {
+  font-family: "roboto-variable";
+  src: url(../fonts/roboto-variable.ttf) format("ttf");
+  font-weight: 300;
+  font-style: normal;
+} */
+
 body {
   margin: 2rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-style: normal;
   background-color: #e4e4e4;
 }
 
