@@ -266,6 +266,53 @@ nav {
   border-radius: 10px 10px 0 0;
 } */
 
+.about-profile {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fefefe;
+  margin: 0.5rem 0.5rem 0rem 0.5rem;
+}
+
+.about-profile-text {
+  flex: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.about-profile-text p {
+  color: #999a9f;
+}
+
+.about-profile-text h6 {
+  font-size: 1rem;
+  color: #282a35;
+  text-transform: uppercase;
+}
+
+.about-profile-text h3 {
+  color: #282a35;
+  font-size: 1.8rem;
+}
+
+.about-profile-photo {
+  flex: 40%;
+  width: 100%;
+  min-height: 400px;
+  background-color: lightgray;
+
+  /* border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  background-image: url(../img/homepage/riley-shooting-500px.jpg); */
+}
+
 /* ========== INSTA PHOTO AND TEXT ========= */
 
 .insta-profile {
