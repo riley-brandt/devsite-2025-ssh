@@ -269,7 +269,10 @@ nav {
 .about-profile {
   display: flex;
   flex-wrap: wrap;
-  border-radius: 12px;
+  border-radius: 12px 50px 12px 50px;
+  /* background-color: #ffeb5e; */
+  /* background-color: #f0f0f0; */
+  /* background-color: #282a35; */
   /* background-color: #e4e4e4; */
 }
 
@@ -278,7 +281,7 @@ nav {
   width: 100%;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  /* text-align: center; */
 
   font-size: 1rem;
   font-weight: 100;
@@ -286,19 +289,24 @@ nav {
 }
 
 .about-profile-text p {
-  color: #2a2a2d;
   font-size: 1.2rem;
+  /* color: white; */
+  color: #2a2a2d;
 }
 
 .about-profile-text h6 {
   font-size: 1rem;
-  color: #282a35;
   text-transform: uppercase;
+  /* color: white; */
+  color: #282a35;
 }
 
 .about-profile-text h3 {
-  color: #282a35;
   font-size: 2.4rem;
+  /* color: #f9d949; */
+  /* color: white; */
+  color: #2a628f;
+  /* color: #282a35; */
 }
 
 .about-profile-photo {
@@ -310,9 +318,18 @@ nav {
 }
 
 .about-profile-photo img {
-  width: 80%;
+  width: 100%;
   border-radius: 50%;
   padding: 1rem;
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 1px;
+}
+
+.about-bio-text-more {
+  font-size: 1.2rem;
+  color: white;
+  color: #2a2a2d;
 }
 
 /* ========== INSTA PHOTO AND TEXT ========= */
