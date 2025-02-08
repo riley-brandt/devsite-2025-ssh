@@ -116,6 +116,11 @@ footer {
   text-decoration: none;
 }
 
+.footer-item a:visited {
+  color: white;
+  text-decoration: none;
+}
+
 .footer-item a:hover {
   color: #ffeb5e;
   text-decoration: none;
