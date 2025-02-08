@@ -10,14 +10,12 @@ The development website for rileybrandt.com.
 - A lessons page
 - Working hamburger menu
 - Home, About, Contact (Portfolio page can be added later)
-- FOSS photography workflow blog post
+- Blog: FOSS photography workflow post
 
 ## To Do List
 
 - Code the Hamburger Menu button
 - Fix the footer logo's resolution
-- Fix the footer's layout/spacing
-- Switch footer's divs to logo on top?
 
 ## Pages to Code
 
@@ -27,6 +25,9 @@ The development website for rileybrandt.com.
 - Lessons
 - FOSS photography workflow blog post
 
+## Post launch ideas
+
 - Photo Gallery: Campus Life
 - Photo Gallery: Portraits
 - Photo Gallery: Events
+- Photo Gallery: News/Media
