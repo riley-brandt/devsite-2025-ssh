@@ -44,13 +44,36 @@
       <!-- ====== CONTACT CONTENT CONTAINER ======= -->
 
       <div class="contact-container">
-        <form action="/action_page.php">
-          <label for="fname">First name:</label><br />
-          <input type="text" id="fname" name="fname" value="John" /><br />
-          <label for="lname">Last name:</label><br />
-          <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
-          <input type="submit" value="Submit" />
-        </form>
+        <div class="contact-form-container">
+          <!-- ====== FORM ELEMENT 01 ======= -->
+
+          <div class="contact-form-img">
+            <h1>Contact Riley</h1>
+            <p>
+              I currenlty have a fulltime photography position at the University
+              of Calgary which keeps be busy. However, I am available for a few
+              select assignments.
+            </p>
+            <i class="fa fa-envelope fa-5x" aria-hidden="true"></i>
+          </div>
+          <!-- ====== FORM ELEMENT 02 ======= -->
+
+          <div class="contact-form-fields">
+            <form action="/action_page.php">
+              <label for="fname">First name:</label><br />
+              <input type="text" id="fname" name="fname" value="John" /><br />
+              <label for="lname">Last name:</label><br />
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                value="Doe"
+              /><br /><br />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+          <!-- ====== END CONTACT FORM CONTAINER ======= -->
+        </div>
       </div>
 
       <footer>
@@ -84,8 +107,6 @@
                 >GitHub</a
               >
             </li>
-            <!-- <li><i class="fa fa-th-large" aria-hidden="true"></i> Portfolio</li> -->
-            <!-- <li><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</li> -->
           </ul>
         </div>
 
@@ -94,7 +115,7 @@
         <div class="footer-logo">
           <div>
             <img
-              src="./img/logo/rb-logo-white-160px.png"
+              src="./img/logo/logo-white-775px.webp"
               alt="Riley Brandt Photography logo"
             />
           </div>
