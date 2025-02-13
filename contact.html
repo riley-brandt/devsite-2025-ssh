@@ -47,27 +47,36 @@
         <div class="contact-form-container">
           <!-- ====== FORM ELEMENT 01 ======= -->
 
-          <div class="contact-form-img">
-            <h1>Contact Riley</h1>
-            <p>
-              I currenlty have a fulltime photography position at the University
-              of Calgary which keeps be busy. However, I am available for a few
-              select assignments.
-            </p>
-            <i class="fa fa-envelope fa-5x" aria-hidden="true"></i>
+          <div class="contact-form-left-container">
+            <div class="contact-form-txt">
+              <h1>Contact Riley</h1>
+              <p>
+                I currenlty have a fulltime photography position at the
+                University of Calgary which keeps be busy. However, I am
+                available for a few select assignments.
+              </p>
+            </div>
+            <div id="contact-icons">
+              <div>
+                <i class="fa fa-envelope fa-5x" aria-hidden="true"></i>
+              </div>
+            </div>
           </div>
+
           <!-- ====== FORM ELEMENT 02 ======= -->
 
           <div class="contact-form-fields">
             <form action="/action_page.php">
               <label for="fname">First name:</label><br />
-              <input type="text" id="fname" name="fname" value="John" /><br />
+              <input type="text" id="fname" name="fname" value="Joe" /><br />
               <label for="lname">Last name:</label><br />
+              <input type="text" id="lname" name="lname" value="Mama" /><br />
+              <label for="email">Email Address:</label><br />
               <input
-                type="text"
-                id="lname"
-                name="lname"
-                value="Doe"
+                type="email"
+                id="email"
+                name="email"
+                value="joemama@email.com"
               /><br /><br />
               <input type="submit" value="Submit" />
             </form>

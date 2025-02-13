@@ -60,6 +60,42 @@ body {
   background-color: #e4e4e4;
 }
 
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #282a35;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #2a628f;
+}
+
 /* ========== BODY STYLES ========= */
 
 /* ========== BODY CONTAINER  ========= */
@@ -126,11 +162,6 @@ footer {
   text-decoration: none;
 }
 
-/* .footer-item a.active {
-  color: #ffeb5e;
-  text-decoration: none;
-} */
-
 .footer-item ul {
   list-style-type: none;
   padding-left: 0;
@@ -172,39 +203,33 @@ header .logo img {
   margin: 2rem 0.5rem 0rem 0.5rem;
 }
 
-.contact-container {
-  margin: 2rem 0.5rem 0rem 0.5rem;
-  background-color: #e4e4e4;
+/* .contact-container {
+  margin: 0 0.5rem 0rem 0.5rem;
   border-radius: 12px 12px 0 0;
-}
+} */
 
 .contact-form-container {
   display: flex;
   flex-wrap: wrap;
-  padding: 3rem;
-  /* border-radius: 12px;
-  margin-bottom: 0.5rem;
-  background-color: #e4e4e4; */
+  padding: 2rem;
 }
 
-/* .contact-form-img i {
+#contact-icons {
   text-align: center;
-} */
+  padding-bottom: 1rem;
+}
 
-.contact-form-img {
+.contact-form-left-container {
   flex: 40%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 1rem 2rem 1rem 2rem;
   background-color: #ffeb5e;
   margin-right: 1rem;
   box-shadow: 1px 2px 2px #c6c6c6;
+}
 
-  /* border-radius: 12px 0 0 12px;
-  color: white;
-  background-color: #282a35; */
+.contact-form-txt {
+  padding: 1rem 2rem 1rem 2rem;
 }
 
 .contact-form-fields {
@@ -214,7 +239,7 @@ header .logo img {
   font-size: 1rem;
   font-weight: 100;
   padding: 1rem 2rem 1rem 2rem;
-  background-color: white;
+  background-color: #e4e4e4;
   box-shadow: 1px 2px 2px #c6c6c6;
 }
 
