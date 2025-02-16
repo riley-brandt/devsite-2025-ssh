@@ -67,10 +67,15 @@
 
           <div class="contact-form-fields">
             <form action="/action_page.php">
-              <label for="fname">First name:</label><br />
-              <input type="text" id="fname" name="fname" value="Joe" /><br />
-              <label for="lname">Last name:</label><br />
-              <input type="text" id="lname" name="lname" value="Mama" /><br />
+              <label for="fname">Name:</label><br />
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                value="Joe Mama"
+              /><br />
+              <!-- <label for="lname">Last name:</label><br />
+              <input type="text" id="lname" name="lname" value="Mama" /><br /> -->
               <label for="email">Email Address:</label><br />
               <input
                 type="email"
@@ -78,6 +83,14 @@
                 name="email"
                 value="joemama@email.com"
               /><br /><br />
+
+              <label for="message">Message:</label><br />
+
+              <textarea id="message" name="message" rows="8" cols="50">
+              At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+              </textarea
+              ><br /><br />
+
               <input type="submit" value="Submit" />
             </form>
           </div>

@@ -83,8 +83,10 @@ input[type="email"] {
 
 input[type="submit"] {
   width: 100%;
-  background-color: #282a35;
-  color: white;
+  background-color: #ffeb5e;
+  /* background-color: #e4e4e4; */
+  /* background-color: #282a35; */
+  /* color: white; */
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -93,7 +95,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #2a628f;
+  background-color: #e4e4e4;
 }
 
 /* ========== BODY STYLES ========= */
@@ -203,15 +205,18 @@ header .logo img {
   margin: 2rem 0.5rem 0rem 0.5rem;
 }
 
-/* .contact-container {
-  margin: 0 0.5rem 0rem 0.5rem;
-  border-radius: 12px 12px 0 0;
-} */
+.contact-container {
+  margin: 2rem 0.5rem 0rem 0.5rem;
+  /* border-radius: 12px 50px 12px 50px; */
+  padding: 2rem;
+  background-color: #e4e4e4;
+  /* background-color: #282a35; */
+}
 
 .contact-form-container {
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem;
+  padding: 2rem 0.5rem 1rem 0.5rem;
 }
 
 #contact-icons {
@@ -226,6 +231,7 @@ header .logo img {
   background-color: #ffeb5e;
   margin-right: 1rem;
   box-shadow: 1px 2px 2px #c6c6c6;
+  border-radius: 12px;
 }
 
 .contact-form-txt {
@@ -239,7 +245,10 @@ header .logo img {
   font-size: 1rem;
   font-weight: 100;
   padding: 1rem 2rem 1rem 2rem;
-  background-color: #e4e4e4;
+  border-radius: 12px;
+
+  background-color: #282a35;
+  color: white;
   box-shadow: 1px 2px 2px #c6c6c6;
 }
 
@@ -404,10 +413,26 @@ nav {
   border-width: 1px;
 }
 
-.about-bio-text-more {
+.about-containers-main > div:nth-of-type(2) {
+  background-color: yellow;
+}
+
+.about-containers {
   font-size: 1.2rem;
-  color: white;
+  background-color: white;
   color: #2a2a2d;
+  /* margin-bottom: 1rem; */
+}
+
+.about-containers h3 {
+  color: red;
+}
+
+.about-containers-main {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  background-color: #e4e4e4;
 }
 
 /* ========== INSTA PHOTO AND TEXT ========= */
@@ -502,7 +527,7 @@ nav {
   align-items: center;
   padding: 0.5rem;
   background-color: #e4e4e4;
-  border-radius: 10px 10px 0px 0px;
+  /* border-radius: 10px 10px 0px 0px; */
   margin: 0.5rem 0.5rem 0 0.5rem;
 }
 
