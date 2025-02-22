@@ -4,6 +4,17 @@ The development website for rileybrandt.com.
 
 ![website preview image](./img/readme-pic.jpg)
 
+## To Do List
+
+- Code the Hamburger Menu button
+- About page contents
+- CSS sytling of about page blocks
+- Finalise colour scheme
+- Add contact form backend
+- Finish Contact page blurb
+- Take a new headshot/selfie for the About page
+- Fix all the media queries/responsive layouts
+
 ## Required for live push
 
 - Working contact form
@@ -11,11 +22,6 @@ The development website for rileybrandt.com.
 - Working hamburger menu
 - Home, About, Contact (Portfolio page can be added later)
 - Blog: FOSS photography workflow post
-
-## To Do List
-
-- Code the Hamburger Menu button
-- Fix the footer logo's resolution
 
 ## Pages to Code
 
@@ -31,3 +37,9 @@ The development website for rileybrandt.com.
 - Photo Gallery: Portraits
 - Photo Gallery: Events
 - Photo Gallery: News/Media
+
+## Fine Tuning
+
+- Switch to local fonts (need to set weights)
+- Switch to --var colours
+- Convert all images to WebP format
