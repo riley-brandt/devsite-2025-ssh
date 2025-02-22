@@ -73,12 +73,10 @@ select {
 
 input::placeholder {
   color: #969696;
-  /* opacity: 0.5; */
 }
 
 textarea::placeholder {
   color: #969696;
-  /* opacity: 0.5; */
 }
 
 input[type="text"],
@@ -89,6 +87,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
+  box-shadow: 1px 2px 2px #c6c6c6;
 }
 
 input[type="email"] {
@@ -99,12 +98,12 @@ input[type="email"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  box-shadow: 1px 2px 2px #c6c6c6;
 }
 
 input[type="submit"] {
   width: 100%;
-  /* background-color: #ffeb5e; */
-  /* background-color: #e4e4e4; */
+
   background-color: #282a35;
   color: white;
   padding: 14px 20px;
@@ -112,12 +111,12 @@ input[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  box-shadow: 1px 2px 2px #c6c6c6;
 }
 
 input[type="submit"]:hover {
   background-color: #ffeb5e;
   color: black;
-  /* background-color: #e4e4e4; */
 }
 
 /* .col-25 {
@@ -258,13 +257,13 @@ header .logo img {
 }
 
 /* .contact-container {
-
+  padding-top: 1rem;
 } */
 
 .contact-form-container {
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem 0.7rem 1rem 0.5rem;
+  padding: 2rem 0.5rem 0rem 0.5rem;
 }
 
 /* #contact-icons h3 {
@@ -289,6 +288,7 @@ header .logo img {
   padding: 1rem;
   border-radius: 12px;
   height: 100%;
+  box-shadow: 1px 2px 2px #c6c6c6;
 }
 
 .contact-form-left-container {
@@ -296,9 +296,8 @@ header .logo img {
   display: flex;
   flex-direction: column;
   background-color: #e4e4e4;
-  margin-right: 1rem;
-  box-shadow: 1px 2px 2px #c6c6c6;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  /* margin-right: 1rem; */
 }
 
 .contact-form-fields {
@@ -309,8 +308,6 @@ header .logo img {
   font-weight: 100;
   padding: 1rem 2rem 1rem 2rem;
   background-color: #e4e4e4;
-
-  box-shadow: 1px 2px 2px #c6c6c6;
 }
 
 /* ========== NAVIGATION BAR ========= */
@@ -748,7 +745,7 @@ nav {
   }
 
   .footer-logo img {
-    height: 38px;
+    height: 30px;
   }
 
   footer {
