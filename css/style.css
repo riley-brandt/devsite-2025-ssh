@@ -468,6 +468,7 @@ nav {
   text-transform: uppercase;
   color: #ffeb5e;
   letter-spacing: 2px;
+  margin-right: 1rem;
 }
 
 .about-profile-text h3 {
@@ -495,8 +496,8 @@ nav {
 
 /* ======== ABOUT CONTAINERS ========== */
 
-
 .about-containers-main > div:nth-of-type(2) {
+  /* padding: 1rem 2rem 1rem 2rem; */
   background-color: #282a35;
   color: white;
 }
@@ -505,36 +506,49 @@ nav {
   color: #ffeb5e;
 }
 
-
-
 .about-containers {
   display: flex;
-  /* flex-direction: row; */
   flex-wrap: wrap;
   font-size: 1.2rem;
   color: #2a2a2d;
-  background-color: #e4e4e4;
-  padding: 2rem;
+  /* background-color: #e4e4e4; */
+  padding: 1.2rem;
+  /* border-radius: 12px;
+  margin-bottom: 1rem; */
+}
+
+.about-inner-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 2rem 1rem 2rem;
   border-radius: 12px;
-  margin-bottom: 1rem;
+  box-shadow: 1px 2px 2px #c6c6c6;
+  background-color: white;
+}
+
+.about-containers-main {
+  margin-top: 1rem;
+  border-radius: 12px 12px 0px 0px;
+  background-color: #e4e4e4;
 }
 
 .about-container-left {
   width: 48%;
   margin-right: 2rem;
- }
- 
- .about-container-right {
-   width: 48%;
- }
+}
+
+.about-container-right h5 {
+  line-height: 0rem;
+  margin-bottom: 0;
+  color: #ffeb5e;
+}
+
+.about-container-right {
+  width: 48%;
+}
 
 .about-containers h3 {
   color: #2a628f;
-}
-
-.about-containers-main {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 /* ========== HOMEPAGE INSTA | PHOTO AND TEXT ========= */
@@ -766,11 +780,11 @@ nav {
   .about-container-left {
     width: 100%;
     margin-right: 0;
-   }
+  }
 
-   .about-container-right {
+  .about-container-right {
     width: 100%;
-   }
+  }
 
   .lbox-column {
     flex: 100%;
