@@ -429,32 +429,38 @@ nav {
   border-radius: 10px 10px 0 0;
 } */
 
+/* ======== ABOUT PAGE BIO PROFILE ========== */
+
 .about-profile {
   display: flex;
   flex-wrap: wrap;
-  border-radius: 70px 12px 70px 12px;
-  /* border-radius: 12px 70px 12px 70px; */
-  /* border-radius: 12px; */
-  /* background-color: #0c60a6; */
+  border-radius: 12px;
   background-color: #282a35;
-  padding: 1rem 2rem 1rem 2rem;
+  margin: 0.5rem 0.5rem 0rem 0.5rem;
+}
+
+.about-photo {
+  flex: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 400px;
+  background-image: url(../img/homepage/riley-shooting-500px.jpg);
+  border-radius: 12px 0 0 12px;
 }
 
 .about-profile-text {
-  flex: 60%;
+  flex: 50%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1rem 2rem 1rem 2rem;
-  /* font-size: 1rem; */
-  /* font-weight: 100; */
+  padding: 1rem 3rem 2rem 3rem;
 }
 
 .about-profile-text p {
   font-size: 1.2rem;
   font-weight: lighter;
   color: white;
-  /* color: #2a2a2d; */
 }
 
 .about-profile-text h6 {
@@ -462,39 +468,35 @@ nav {
   text-transform: uppercase;
   color: #ffeb5e;
   letter-spacing: 2px;
-  /* line-height: 1rem; */
-  /* color: white; */
-  /* color: #282a35; */
 }
 
 .about-profile-text h3 {
   font-size: 2.4rem;
   color: #ffeb5e;
-  /* color: #2a628f; */
 }
 
-.about-profile-photo {
+/* .about-profile-photo {
   flex: 40%;
   display: flex;
   align-items: center;
   text-align: right;
-}
+} */
 
-.about-profile-photo img {
+/* .about-profile-photo img {
   width: 80%;
   border-radius: 50%;
   padding: 0.5rem;
   border-style: solid;
   border-color: #2a628f;
-  /* border-color: #ffeb5e; */
   border-width: 3px;
   background-color: #e4e4e4;
   box-shadow: 5px 5px 5px black;
-}
+} */
+
+/* ======== ABOUT CONTAINERS ========== */
+
 
 .about-containers-main > div:nth-of-type(2) {
-  /* border-radius: 50px 12px 50px 12px; */
-  /* border-radius: 12px 50px 12px 50px; */
   background-color: #282a35;
   color: white;
 }
@@ -503,27 +505,39 @@ nav {
   color: #ffeb5e;
 }
 
+
+
 .about-containers {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
   font-size: 1.2rem;
   color: #2a2a2d;
   background-color: #e4e4e4;
   padding: 2rem;
-  border-radius: 50px 12px 50px 12px;
-  /* border-radius: 12px 50px 12px 50px; */
+  border-radius: 12px;
   margin-bottom: 1rem;
 }
+
+.about-container-left {
+  width: 48%;
+  margin-right: 2rem;
+ }
+ 
+ .about-container-right {
+   width: 48%;
+ }
 
 .about-containers h3 {
   color: #2a628f;
 }
 
 .about-containers-main {
-  /* background-color: red; */
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-/* ========== INSTA PHOTO AND TEXT ========= */
+/* ========== HOMEPAGE INSTA | PHOTO AND TEXT ========= */
 
 .insta-profile {
   display: flex;
@@ -744,6 +758,19 @@ nav {
     border-radius: 0;
     padding: 0;
   }
+
+  .about-photo {
+    border-radius: 12px 12px 0 0;
+  }
+
+  .about-container-left {
+    width: 100%;
+    margin-right: 0;
+   }
+
+   .about-container-right {
+    width: 100%;
+   }
 
   .lbox-column {
     flex: 100%;
