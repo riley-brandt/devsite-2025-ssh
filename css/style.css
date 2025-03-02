@@ -434,20 +434,32 @@ nav {
 .about-profile {
   display: flex;
   flex-wrap: wrap;
-  border-radius: 12px;
-  background-color: #282a35;
-  margin: 0.5rem 0.5rem 0rem 0.5rem;
+  /* border-radius: 12px; */
+  /* background-color: #282a35; */
+  /* margin: 0.5rem 0.5rem 0rem 0.5rem; */
 }
 
 .about-photo {
   flex: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  min-height: 400px;
-  background-image: url(../img/homepage/riley-shooting-500px.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 12px 0 0 12px;
+  background-color: #e4e4e4;
+  padding: 2rem 1rem 1rem 1rem;
 }
+
+.about-photo-pic img {
+  width: 380px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 0.5rem;
+  box-shadow: 1px 2px 2px #c6c6c6;
+}
+
+/* .about-photo-pic {
+} */
 
 .about-profile-text {
   flex: 50%;
@@ -455,6 +467,9 @@ nav {
   display: flex;
   flex-direction: column;
   padding: 1rem 3rem 2rem 3rem;
+  border-radius: 0 12px 12px 0;
+  background-color: #282a35;
+  border-left: 4px solid #ffeb5e;
 }
 
 .about-profile-text p {
@@ -711,6 +726,10 @@ nav {
     /* border-radius: 12px; */
   }
 
+  .about-photo-pic img {
+    width: 350px;
+  }
+
   .about-profile-photo {
     text-align: center;
   }
@@ -733,6 +752,10 @@ nav {
   .lbox-column {
     flex: 50%;
     max-width: 50%;
+  }
+
+  .about-photo-pic img {
+    width: 320px;
   }
 
   .card-column-2 {
@@ -762,9 +785,19 @@ nav {
   }
 }
 
+@media screen and (max-width: 820px) {
+  .about-photo {
+    border-radius: 0;
+  }
+}
+
 @media screen and (max-width: 600px) {
   input[type="submit"] {
     width: 100%;
+  }
+
+  .about-photo-pic img {
+    width: 150px;
   }
 
   #container-body-main {
@@ -774,7 +807,7 @@ nav {
   }
 
   .about-photo {
-    border-radius: 12px 12px 0 0;
+    border-radius: 0;
   }
 
   .about-container-left {
