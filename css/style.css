@@ -513,26 +513,34 @@ nav {
 
 /* ======== ABOUT CONTAINERS ========== */
 
-.about-containers-main > div:nth-of-type(2) {
-  /* padding: 1rem 2rem 1rem 2rem; */
+/* .about-containers-main > div:nth-of-type(2) {
   background-color: #282a35;
   color: white;
 }
 
 .about-containers-main > div:nth-of-type(2) h3 {
   color: #ffeb5e;
-}
+} */
+
+/* .about-inner-content > div:nth-of-type(2) {
+  background-color: #282a35;
+  color: white;  margin-top: 1rem;
+
+} */
 
 .about-containers {
   display: flex;
   flex-wrap: wrap;
   font-size: 1.2rem;
   color: #2a2a2d;
-  /* background-color: #e4e4e4; */
-  padding: 1.2rem;
-  /* border-radius: 12px;
-  margin-bottom: 1rem; */
+  margin-top: 1rem;
+  /* padding: 1rem; */
 }
+
+/* .about-containers > div::{
+  border-radius: 0;
+  box-shadow: none;
+} */
 
 .about-inner-content {
   display: flex;
@@ -540,17 +548,27 @@ nav {
   padding: 1rem 2rem 1rem 2rem;
   border-radius: 12px;
   box-shadow: 1px 2px 2px #c6c6c6;
-  background-color: white;
-}
-
-.about-containers-main {
-  margin-top: 1rem;
-  border-radius: 12px 12px 0px 0px;
   background-color: #e4e4e4;
 }
 
+.about-inner-content-dark {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 1px 2px 2px #c6c6c6;
+  background-color: #282a35;
+  color: white;
+}
+
+.about-containers-main {
+  /* margin-top: 1rem; */
+  /* background-color: red; */
+  /* border-radius: 12px 12px 0px 0px; */
+}
+
 .about-container-left {
-  width: 48%;
+  width: 45%;
   margin-right: 2rem;
 }
 
@@ -561,7 +579,7 @@ nav {
 }
 
 .about-container-right {
-  width: 48%;
+  width: 45%;
 }
 
 .about-containers h3 {
