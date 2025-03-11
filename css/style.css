@@ -268,6 +268,10 @@ header .logo img {
   text-align: center;
 }
 
+.contact-form-left-container a {
+  color: #282a35;
+}
+
 .contact-left-inner-bg {
   background-color: white;
   padding: 1rem;
@@ -308,7 +312,6 @@ header .logo img {
 }
 
 .success button {
-  /* background-color: #fed33f; */
   background-color: white;
   margin-top: 1rem;
   border: none;
