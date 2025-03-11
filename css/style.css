@@ -258,28 +258,11 @@ header .logo img {
   margin: 2rem 0.5rem 0rem 0.5rem;
 }
 
-/* .contact-container {
-  padding-top: 1rem;
-} */
-
 .contact-form-container {
   display: flex;
   flex-wrap: wrap;
   padding: 2rem 0.5rem 0rem 0.5rem;
 }
-
-/* #contact-icons h3 {
-  font-size: 1.6rem;
-  text-transform: uppercase;
-}
-
-#contact-icons {
-  padding: 1rem;
-  background-color: #e4e4e4;
-  text-align: center;
-  height: 100%;
-  border-radius: 0 0 12px 12px;
-} */
 
 .card-left-txt h2 {
   text-align: center;
@@ -316,6 +299,32 @@ header .logo img {
   border-radius: 0 12px 0 0;
 }
 
+.success h2 {
+  font-size: 2.4rem;
+}
+
+.success p {
+  font-size: 1.2rem;
+}
+
+.success button {
+  /* background-color: #fed33f; */
+  background-color: white;
+  margin-top: 1rem;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  box-shadow: 1px 2px 2px #c6c6c6;
+}
+
+.success button:hover {
+  background-color: #ffeb5e;
+}
 /* ========== NAVIGATION BAR ========= */
 
 .nav-logo {
@@ -329,7 +338,6 @@ header .logo img {
   margin: 0;
   width: 100%;
   height: 100%;
-  /* background-color: white; */
   padding: 20px;
   transition: left 0.3s;
 }
