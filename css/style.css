@@ -269,6 +269,7 @@ header .logo img {
 }
 
 .contact-left-inner-bg {
+  min-width: 320px;
   background-color: white;
   padding: 1rem;
   border-radius: 12px;
