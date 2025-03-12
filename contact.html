@@ -48,26 +48,6 @@
           <!-- ====== FORM ELEMENT 01 ======= -->
 
           <div class="contact-form-left-container">
-            <!-- =========== OLD FORM TEXT - LEFT CONTAINER =========== -->
-            <!-- <div class="contact-form-txt">
-              <div>
-                <h1>
-                  <i class="fa fa-envelope" aria-hidden="true"></i>
-                  Contact Riley
-                </h1>
-              </div>
-            </div>
-            <div id="contact-icons">
-              <h3>Availability</h3>
-
-              <p>
-                I currenlty have a fulltime photography position at the
-                University of Calgary which keeps be busy. However, I am
-                available for a few select assignments.
-              </p>
-              <br />
-            </div> -->
-
             <div class="contact-left-inner-bg">
               <div class="card-left-heading-bg">
                 <div class="card-highlight-2">
@@ -98,32 +78,41 @@
           <!-- ====== FORM ELEMENT 02 ======= -->
 
           <div class="contact-form-fields">
+
+            <!-- Bot and Spam protection -->
             <form
               action="https://submit-form.com/uxgY79Mgj"
               data-botpoison-public-key="pk_5c85bca2-15fa-4168-a455-6dfdf9010ba2"
             >
+
+              <!-- Redirect after form submitted -->
               <input
                 type="hidden"
                 name="_redirect"
-                value="https://riley-brandt.github.io/devsite-2025-ssh/contact-success.html"
+                value="https://riley-brandt.github.io/devsite-2025-ssh/contact-success.html#form-anchor"
               />
 
               <!-- Remove the added string at the end -->
               <input type="hidden" name="_append" value="false" />
 
+              <!-- Form inputs -->
               <label for="fname">Name:</label><br />
               <input
                 type="text"
                 id="fname"
                 name="fname"
-                placeholder="Joe Mama"
+                placeholder="Joe Mama" 
+                required
+              
               /><br /><br />
               <label for="email">Email Address:</label><br />
               <input
                 type="email"
                 id="email"
                 name="email"
-                placeholder="joemama@email.com"
+                placeholder="joemama@email.com" 
+                required
+                
               /><br /><br />
 
               <label for="message">Message:</label><br />
@@ -132,7 +121,8 @@
                 name="message"
                 id="message"
                 placeholder="Type message here..."
-                style="height: 180px"
+                style="height: 180px" 
+                required
               ></textarea>
 
               <br /><br />
@@ -193,10 +183,12 @@
       </footer>
     </div>
 
-    <!-- ====== SCRIPT LINK ====== -->
+    <!-- ====== SCRIPT LINKS ====== -->
 
-    <script src="../js/scripts.js"></script>
     <!-- Imports the @botpoison/browser script -->
     <script src="https://unpkg.com/@botpoison/browser" async></script>
+
+    <!-- My Scripts -->
+    <script src="../js/scripts.js"></script>
   </body>
 </html>
