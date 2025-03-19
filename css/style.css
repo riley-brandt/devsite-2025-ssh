@@ -687,8 +687,8 @@ nav {
 }
 
 .insta-text button {
-  /* background-color: #fed33f; */
-  background-color: white;
+  /* background-color: white; */
+  background-color: #fed33f;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   border: none;
@@ -703,7 +703,7 @@ nav {
 }
 
 .insta-text button:hover {
-  background-color: #ffeb5e;
+  background-color: #e4e4e4;
 }
 
 /* ====== BULLET POINT CARDS || ALT GRID METHOD ====== */
