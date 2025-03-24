@@ -8,6 +8,12 @@
 //   }
 // }
 
+// ============== Test Nav Bar ===============
+
+// document.getElementById("nav-toggle").addEventListener("click", function () {
+//   document.querySelector(".nav").classList.toggle("active");
+// });
+
 // =========== NEW RESPONSIVE NAV BAR =============
 
 const theBody = document.querySelector("body");
