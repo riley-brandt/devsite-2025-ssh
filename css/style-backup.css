@@ -101,7 +101,34 @@ input[type="submit"]:hover {
   color: black;
 }
 
+/* .col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 1rem;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 1rem;
+} */
+
+/* Clear floats after the columns */
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) {
+  input[type="submit"] {
+    width: 100%;
+  }
+} */
+
 /* ========== BODY STYLES ========= */
+
 /* ========== BODY CONTAINER  ========= */
 
 #container-body-main {
@@ -190,56 +217,22 @@ footer {
 
 /* ========== HEADER ========= */
 
-/* header {
-
-} */
-
-/* ========== NAVIGATION BAR ========= */
-
-nav {
-  /* background-color: #ffeb5e; */
-  margin-top: 0.5rem;
+header {
+  padding: 10px 20px;
 }
 
-nav ul {
-  width: 100%;
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  min-height: 50px;
-}
-
-nav a {
-  height: 100%;
-  padding: 0 24px 0 0;
-  text-decoration: none;
+header .wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  font-size: 1.2rem;
-  color: black;
+  justify-content: space-between;
 }
 
-nav a:hover {
-  color: #b8001f;
-}
-
-nav li:first-child {
-  margin-right: auto;
-  height: auto;
-  padding-left: 0.5rem;
-  /* margin-left: 0;
-  padding-left: 0;
-  float: right; */
-}
-
-.logo {
-  content: url("../img/logo/logo-black-775px.webp");
+header .logo img {
   height: 60px;
+  display: block;
+  /* margin-right: auto; */
 }
 
 /* ============ PAGE CONTENT FORMATTING ============ */
@@ -341,15 +334,14 @@ nav li:first-child {
 .success button:hover {
   background-color: #ffeb5e;
 }
+/* ========== NAVIGATION BAR ========= */
 
-/* ==========  MY NAVIGATION BAR STYLES ========= */
-
-/* .navbar a.active {
-  color: brown;
-} */
+.nav-logo {
+  content: url("../img/logo/logo-black-775px.webp");
+}
 /* =========== NEW NAV BAR =============== */
 
-/* .topnav {
+.topnav {
   overflow: hidden;
 }
 
@@ -373,11 +365,11 @@ nav li:first-child {
 
 .topnav .icon {
   display: none;
-} */
+}
 
 /* =========== OLD NAV BAR/HAMBURGER MENU =============== */
 
-/* .navbar {
+.navbar {
   position: fixed;
   top: 0;
   left: 100%;
@@ -438,11 +430,11 @@ nav {
 .close-nav button:hover {
   color: #222222;
   background: white;
-} */
+}
 
 /* ========== MENU BAR/ MENU ICON ========= */
 
-/* .menu-bar button {
+.menu-bar button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #f7f7f7;
   height: 40px;
@@ -459,6 +451,8 @@ nav {
 }
 
 .menu-bar i::after {
+  /* color: #282a35; */
+
   display: block;
   content: "";
   border-top: 3px solid #444444;
@@ -469,7 +463,7 @@ nav {
 }
 .menu-bar button:hover i {
   border-color: #222222;
-} */
+}
 
 /* ========== BODY CONTAINER  ========= */
 
@@ -488,6 +482,9 @@ nav {
 .about-profile {
   display: flex;
   flex-wrap: wrap;
+  /* border-radius: 12px; */
+  /* background-color: #282a35; */
+  /* margin: 0.5rem 0.5rem 0rem 0.5rem; */
 }
 
 .about-photo {
@@ -508,6 +505,9 @@ nav {
   padding: 0.5rem;
   box-shadow: 1px 2px 2px #c6c6c6;
 }
+
+/* .about-photo-pic {
+} */
 
 .about-profile-text {
   flex: 50%;
@@ -539,6 +539,41 @@ nav {
   color: #ffeb5e;
 }
 
+/* .about-profile-photo {
+  flex: 40%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+} */
+
+/* .about-profile-photo img {
+  width: 80%;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border-style: solid;
+  border-color: #2a628f;
+  border-width: 3px;
+  background-color: #e4e4e4;
+  box-shadow: 5px 5px 5px black;
+} */
+
+/* ======== ABOUT CONTAINERS ========== */
+
+/* .about-containers-main > div:nth-of-type(2) {
+  background-color: #282a35;
+  color: white;
+}
+
+.about-containers-main > div:nth-of-type(2) h3 {
+  color: #ffeb5e;
+} */
+
+/* .about-inner-content > div:nth-of-type(2) {
+  background-color: #282a35;
+  color: white;  margin-top: 1rem;
+
+} */
+
 .about-containers {
   display: flex;
   flex-wrap: wrap;
@@ -547,6 +582,11 @@ nav {
   margin-top: 1rem;
   /* padding: 1rem; */
 }
+
+/* .about-containers > div::{
+  border-radius: 0;
+  box-shadow: none;
+} */
 
 .about-inner-content {
   display: flex;
@@ -565,6 +605,12 @@ nav {
   box-shadow: 1px 2px 2px #c6c6c6;
   background-color: #282a35;
   color: white;
+}
+
+.about-containers-main {
+  /* margin-top: 1rem; */
+  /* background-color: red; */
+  /* border-radius: 12px 12px 0px 0px; */
 }
 
 .about-container-left {
@@ -747,6 +793,81 @@ nav {
   width: 100%;
 }
 
+/* ============ Test Nav Bar =========== */
+
+/* nav {
+  position: relative;
+  height: 50px;
+}
+
+.nav {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  color: black;
+  display: none;
+}
+
+.nav li {
+  padding: 10px;
+}
+
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: block;
+  }
+
+  .nav-toggle-label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #333;
+  }
+
+  .nav-toggle-label span {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 5px;
+    background: #fff;
+  }
+
+  .nav-toggle-label span:before,
+  .nav-toggle-label span:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #fff;
+  }
+
+  .nav-toggle-label span:before {
+    top: -10px;
+  }
+
+  .nav-toggle-label span:after {
+    top: 10px;
+  }
+} */
+
 /* Responsive layout - makes a two column layout */
 
 @media screen and (max-width: 1250px) {
@@ -767,6 +888,14 @@ nav {
     flex: 50%;
     max-width: 48%;
   }
+
+  /* .about-profile-photo {
+    flex: 50%;
+  }
+
+  .about-profile-text {
+    flex: 50%;
+  } */
 }
 
 /* Responsive layout - makes a two column layout */
@@ -784,6 +913,10 @@ nav {
     flex: 50%;
     max-width: 48%;
   }
+
+  /* header .logo img {
+    height: 46px;
+  } */
 
   .footer-logo img {
     height: 46px;
@@ -835,18 +968,68 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
+  /* .topnav a:not(:first-child) {
+    display: none;
+  } */
+
+  /* .wrapper {
+    flex-direction: column;
+  }
+
+  .logo {
+    display: none;
+  } */
+
+  header .wrapper {
+    width: 100%;
+    margin: 0;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+  }
+
+  /* header .logo img {
+    margin-bottom: 1rem;
+  } */
+
+  .topnav a {
+    display: none;
+    margin: 0.7rem 0 0 0;
+    font-size: 1.4rem;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    margin: 0.5rem 1rem 0 0;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+
   input[type="submit"] {
     width: 100%;
+  }
+
+  .about-photo-pic img {
+    width: 150px;
   }
 
   #container-body-main {
     box-shadow: none;
     border-radius: 0;
     padding: 0;
-  }
-
-  .about-photo-pic img {
-    width: 150px;
   }
 
   .about-container-left {
@@ -886,9 +1069,9 @@ nav {
     border-radius: 0;
   }
 
-  /* header .logo img {
+  header .logo img {
     height: 46px;
-  } */
+  }
 
   .footer-logo img {
     height: 36px;
@@ -910,14 +1093,20 @@ nav {
     margin: 0;
   }
 
-  /* header {
+  header {
     padding-top: 1.4rem;
-  } */
+  }
+}
+
+/* ==========  MY NAVIGATION BAR STYLES ========= */
+
+.navbar a.active {
+  color: brown;
 }
 
 /* ==========  NEW NAV BAR MEDIA QUERIES ========= */
 
-/* @media (min-width: 1000px) {
+@media (min-width: 1000px) {
   .navbar {
     all: unset;
     display: block;
@@ -933,6 +1122,6 @@ nav {
   .menu-bar {
     display: none;
   }
-} */
+}
 
 /* ==========  DEBUGGING ========= */
