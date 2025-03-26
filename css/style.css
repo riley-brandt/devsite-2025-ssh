@@ -225,16 +225,13 @@ nav a {
 }
 
 nav a:hover {
-  color: #b8001f;
+  background-color: #b8001f;
 }
 
 nav li:first-child {
   margin-right: auto;
   height: auto;
   padding-left: 0.5rem;
-  /* margin-left: 0;
-  padding-left: 0;
-  float: right; */
 }
 
 .logo {
@@ -247,9 +244,10 @@ nav li:first-child {
   top: 0;
   right: 0;
   height: 100vh;
-  width: 300px;
+  width: 230px;
   z-index: 999;
-  background-color: white;
+  background-color: #e4e4e4;
+  /* background-color: #ffec5e9d; */
   /* backdrop-filter: blur(10px); */
   box-shadow: -10px 0 -10px rgba(0, 0, 0, 0.1);
   display: none;
@@ -261,15 +259,25 @@ nav li:first-child {
 
 .sidebar li {
   width: 100%;
+  margin-bottom: 3px;
+  background-color: #282a35;
+  border-radius: 5px;
 }
 
 .sidebar a {
   width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
 }
 
-#sidebar-logo {
-  height: 46px;
+.sidebar a:hover {
+  color: #ffeb5e;
 }
+
+/* #sidebar-logo {
+  height: 46px;
+} */
 
 .menu-button {
   display: none;
@@ -876,6 +884,10 @@ nav {
     box-shadow: none;
     border-radius: 0;
     padding: 0;
+  }
+
+  .logo {
+    height: 46px;
   }
 
   .about-photo-pic img {
