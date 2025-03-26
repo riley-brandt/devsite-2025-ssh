@@ -242,6 +242,39 @@ nav li:first-child {
   height: 60px;
 }
 
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px;
+  z-index: 999;
+  background-color: white;
+  /* backdrop-filter: blur(10px); */
+  box-shadow: -10px 0 -10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1.2rem;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+#sidebar-logo {
+  height: 46px;
+}
+
+.menu-button {
+  display: none;
+}
+
 /* ============ PAGE CONTENT FORMATTING ============ */
 
 .about-container {
@@ -805,17 +838,17 @@ nav {
     flex: 100%;
     max-width: 99%;
   }
-
-  /* .insta-photo {
-    border-radius: 0;
-  }
-
-  .insta-text {
-    border-radius: 0;
-  } */
 }
 
 @media screen and (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
   .about-photo {
     border-radius: 12px 12px 0 0;
   }
@@ -913,6 +946,12 @@ nav {
   /* header {
     padding-top: 1.4rem;
   } */
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
 }
 
 /* ==========  NEW NAV BAR MEDIA QUERIES ========= */

@@ -23,15 +23,33 @@
         <!-- ============= NEW NAVIGATION BAR FROM SCRATCH ========== -->
 
         <nav>
+          <!-- === UNORDERED LIST MOBILE === -->
+
+          <ul class="sidebar">
+            <li onclick="hideSidebar()">
+              <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+
+          <!-- === UNORDERED LIST DESKTOP === -->
+
           <ul>
             <li>
               <a class="logo" href="index.html"
                 ><img alt="Riley Brandt Photography logo"
               /></a>
             </li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile">
+              <a href="contact.html" class="active">Contact</a>
+            </li>
+            <li class="menu-button" onclick="showSidebar()">
+              <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            </li>
           </ul>
         </nav>
 
