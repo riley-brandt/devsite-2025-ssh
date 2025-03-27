@@ -20,45 +20,38 @@
       <!-- =========== HEADER & NAVIGATION BAR ============ -->
 
       <header>
-        <div class="wrapper">
-          <div class="logo">
-            <a href="index.html"
-              ><img class="nav-logo" alt="Riley Brandt Photography logo"
-            /></a>
-          </div>
+        <!-- ============= NEW NAVIGATION BAR FROM SCRATCH ========== -->
 
-          <!-- ========= OG NAV BAR/HAMBURGER MENU =========== -->
-          <!-- <div class="navbar">
-            <div class="close-nav"><button>x</button></div>
-            <nav>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="menu-bar">
-            <button><i></i></button>
-          </div> -->
+        <nav>
+          <!-- === UNORDERED LIST MOBILE === -->
 
-        <!-- ========= NEW NAV BAR =========== -->
-        <div class="topnav" id="myTopnav">
-          <a href="index.html">Home</a>
-          <a href="about.html" class="active">About</a>
-          <a href="contact.html">Contact</a>
-          <a
-            href="javascript:void(0);"
-            class="icon"
-            onclick="menuBtnFunction()"
-          >
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
+          <ul class="sidebar">
+            <li onclick="hideSidebar()">
+              <a href="#"><i class="fa fa-times " aria-hidden="true"></i></a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>          
+          </ul>
 
+          <!-- === UNORDERED LIST DESKTOP === -->
 
-          <!-- ========= END WRAPPER ============= -->
-        </div>
+          <ul>
+            <li>
+              <a class="logo" href="index.html"
+                ><img alt="Riley Brandt Photography logo"
+              /></a>
+            </li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html" class="active">About</a></li>
+            <li class="hideOnMobile">
+              <a href="contact.html">Contact</a>
+            </li>
+            <li class="menu-button" onclick="showSidebar()">
+              <a href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </nav>
 
 
       </header>
@@ -129,9 +122,6 @@
             <div class="about-inner-content-dark">
               <div class="about-container-left">
                 <h3><i class="fa fa-trophy" aria-hidden="true"></i> Awards</h3>
-                <!-- <div class="card-highlight-2">
-                  <i class="fa fa-trophy fa-5x" aria-hidden="true"></i>
-                </div> -->
                 <p>
                   Not content to rest on my laurels, I expanded my photography
                   to teaching by creating a successful YouTube channel with over
@@ -238,16 +228,6 @@
 
     <!-- ====== SCRIPT LINK ====== -->
 
-    <script src="../js/scripts.js"></script>
-    <script>
-      function menuBtnFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script>
+    <script src="./js/scripts.js" defer></script>
   </body>
 </html>

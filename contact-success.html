@@ -19,28 +19,39 @@
       <!-- =========== HEADER & NAVIGATION BAR ============ -->
 
       <header>
-        <div class="wrapper">
-          <div class="logo">
-            <a href="index.html"
-              ><img class="nav-logo" alt="Riley Brandt Photography logo"
-            /></a>
-          </div>
-          <div class="navbar">
-            <div class="close-nav"><button>x</button></div>
-            <nav>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="menu-bar">
-            <button><i></i></button>
-          </div>
+        <!-- ============= NEW NAVIGATION BAR FROM SCRATCH ========== -->
 
-          <!-- ======= END WRAPPER ========= -->
-        </div>
+        <nav>
+          <!-- === UNORDERED LIST MOBILE === -->
+
+          <ul class="sidebar">
+            <li onclick="hideSidebar()">
+              <a href="#"><i class="fa fa-times " aria-hidden="true"></i></a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          
+          </ul>
+
+          <!-- === UNORDERED LIST DESKTOP === -->
+
+          <ul>
+            <li>
+              <a class="logo" href="index.html"
+                ><img alt="Riley Brandt Photography logo"
+              /></a>
+            </li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile">
+              <a href="contact.html" class="active">Contact</a>
+            </li>
+            <li class="menu-button" onclick="showSidebar()">
+              <a href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </nav>
       </header>
 
       <!-- ====== CONTACT CONTENT CONTAINER ======= -->
@@ -60,9 +71,7 @@
                 <div class="card-left-txt">
                   <h2>Contact Riley</h2>
                   <p>
-                    I am currently taking on a few portrait assignments. I have
-                    a full-time photography position at the University of
-                    Calgary which takes up most of my time.
+                    I am currently available for the occasional portrait assignment. I have a full-time photography position at the University of Calgary, which takes up most of my time.
                   </p>
 
                   <p>
@@ -155,6 +164,6 @@
 
     <!-- ====== SCRIPT LINK ====== -->
 
-    <script src="../js/scripts.js"></script>
+    <script src="./js/scripts.js" defer></script>
   </body>
 </html>

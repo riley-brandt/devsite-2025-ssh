@@ -19,26 +19,39 @@
       <!-- =========== HEADER & NAVIGATION BAR ============ -->
 
       <header>
-        <div class="wrapper">
-          <div class="logo">
-            <a href="index.html"
-              ><img class="nav-logo" alt="Riley Brandt Photography logo"
-            /></a>
-          </div>
-          <div class="navbar">
-            <div class="close-nav"><button>x</button></div>
-            <nav>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="menu-bar">
-            <button><i></i></button>
-          </div>
-        </div>
+        <!-- ============= NEW NAVIGATION BAR FROM SCRATCH ========== -->
+
+        <nav>
+          <!-- === UNORDERED LIST MOBILE === -->
+
+          <ul class="sidebar">
+            <li onclick="hideSidebar()">
+              <a href="#"><i class="fa fa-times " aria-hidden="true"></i></a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          
+          </ul>
+
+          <!-- === UNORDERED LIST DESKTOP === -->
+
+          <ul>
+            <li>
+              <a class="logo" href="index.html"
+                ><img alt="Riley Brandt Photography logo"
+              /></a>
+            </li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile">
+              <a href="contact.html" class="active">Contact</a>
+            </li>
+            <li class="menu-button" onclick="showSidebar()">
+              <a href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </nav>
       </header>
 
       <!-- ====== CONTACT CONTENT CONTAINER ======= -->
@@ -189,6 +202,6 @@
     <script src="https://unpkg.com/@botpoison/browser" async></script>
 
     <!-- My Scripts -->
-    <script src="../js/scripts.js"></script>
+    <script src="./js/scripts.js" defer></script>
   </body>
 </html>

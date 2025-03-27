@@ -174,7 +174,6 @@ footer {
 
 .footer-item h3 {
   margin-bottom: 0px;
-  /* color: #ffeb5e; */
 }
 
 .footer-logo img {
@@ -190,15 +189,10 @@ footer {
 
 /* ========== HEADER ========= */
 
-/* header {
-
-} */
 
 /* ========== NAVIGATION BAR ========= */
-
-nav {
-  /* background-color: #ffeb5e; */
-  margin-top: 0.5rem;
+.active {
+  color: brown;
 }
 
 nav ul {
@@ -225,7 +219,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #b8001f;
+  color: #b8001f;
 }
 
 nav li:first-child {
@@ -247,22 +241,13 @@ nav li:first-child {
   width: 230px;
   z-index: 999;
   background-color: #e4e4e4;
-  /* background-color: #ffec5e9d; */
-  /* backdrop-filter: blur(10px); */
-  box-shadow: -10px 0 -10px rgba(0, 0, 0, 0.1);
   display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 1.2rem;
+  padding: 1.4rem;
 }
 
-.sidebar li {
-  width: 100%;
-  margin-bottom: 3px;
-  background-color: #282a35;
-  border-radius: 5px;
-}
 
 .sidebar a {
   width: 100%;
@@ -271,17 +256,30 @@ nav li:first-child {
   color: white;
 }
 
+.sidebar li {
+  width: 100%;
+  margin-bottom: 3px;
+  background-color: #282a35;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
 .sidebar a:hover {
   color: #ffeb5e;
 }
 
-/* #sidebar-logo {
-  height: 46px;
-} */
+.sidebar .active {
+  color: #ffeb5e;
+}
 
 .menu-button {
   display: none;
 }
+
+.menu-button a:hover, a:active {
+  color: #ffeb5e;
+}
+
 
 /* ============ PAGE CONTENT FORMATTING ============ */
 
@@ -382,147 +380,6 @@ nav li:first-child {
 .success button:hover {
   background-color: #ffeb5e;
 }
-
-/* ==========  MY NAVIGATION BAR STYLES ========= */
-
-/* .navbar a.active {
-  color: brown;
-} */
-/* =========== NEW NAV BAR =============== */
-
-/* .topnav {
-  overflow: hidden;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.topnav a:hover {
-  color: #b8001f;
-}
-
-.topnav a.active {
-  color: #b8001f;
-}
-
-.topnav .icon {
-  display: none;
-} */
-
-/* =========== OLD NAV BAR/HAMBURGER MENU =============== */
-
-/* .navbar {
-  position: fixed;
-  top: 0;
-  left: 100%;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  transition: left 0.3s;
-}
-
-nav {
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-
-.navbar .show {
-  left: 0 !important;
-}
-
-.hide-scroll {
-  overflow: hidden;
-}
-
-.navbar ul {
-  all: unset;
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
-}
-
-.navbar ul a {
-  all: unset;
-  cursor: pointer;
-}
-
-.navbar ul a:hover {
-  color: #b8001f;
-}
-
-.close-nav {
-  text-align: right;
-  margin-bottom: 20px;
-}
-
-.close-nav button {
-  all: unset;
-  background: #f7f7f7;
-  font-size: 42px;
-  cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 15px;
-  border-radius: 3px;
-  color: #444444;
-}
-
-.close-nav button:hover {
-  color: #222222;
-  background: white;
-} */
-
-/* ========== MENU BAR/ MENU ICON ========= */
-
-/* .menu-bar button {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background: #f7f7f7;
-  height: 40px;
-  width: 40px;
-  margin-left: 10px;
-  padding: 5px 10px;
-  cursor: pointer;
-  border-radius: 3px;
-}
-.menu-bar i {
-  display: block;
-  border-top: 3px solid #444444;
-  border-bottom: 3px solid #444444;
-}
-
-.menu-bar i::after {
-  display: block;
-  content: "";
-  border-top: 3px solid #444444;
-  margin: 6px 0;
-}
-.menu-bar button:hover {
-  background: white;
-}
-.menu-bar button:hover i {
-  border-color: #222222;
-} */
-
-/* ========== BODY CONTAINER  ========= */
-
-/* #container-body-main {
-  max-width: 1400px;
-  min-width: 320px;
-  margin: auto;
-  background-color: var(--bg-white);
-  padding: 1.4em;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  border-radius: 10px 10px 0 0;
-} */
 
 /* ======== ABOUT PAGE BIO PROFILE ========== */
 
@@ -767,7 +624,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .lbox-gallery {
@@ -830,9 +687,9 @@ nav {
     height: 46px;
   }
 
-  .lbox-container {
-    margin-top: 0.5rem;
-  }
+  /* .lbox-container {
+    margin-top: 1.5rem;
+  } */
 
   body {
     margin: 1rem;
@@ -849,6 +706,8 @@ nav {
 }
 
 @media screen and (max-width: 800px) {
+
+
   .hideOnMobile {
     display: none;
   }
@@ -856,7 +715,6 @@ nav {
   .menu-button {
     display: block;
   }
-
   .about-photo {
     border-radius: 12px 12px 0 0;
   }
@@ -886,8 +744,17 @@ nav {
     padding: 0;
   }
 
+  nav {
+    padding: 1.2rem 0.5rem 0rem 0.5rem;
+  }
+
   .logo {
     height: 46px;
+    margin-top: 5px;
+  }
+
+  .about-container {
+    margin: 1.1rem 0.5rem 0rem 0.5rem;
   }
 
   .about-photo-pic img {
@@ -896,6 +763,7 @@ nav {
 
   .about-container-left {
     width: 100%;
+    /* margin-top: 0; */
     margin-right: 0;
   }
 
@@ -918,7 +786,7 @@ nav {
   }
 
   .contact-form-container {
-    padding: 1rem 0 0 0;
+    padding: 0.1rem 0 0 0;
   }
 
   .insta-photo {
@@ -931,16 +799,12 @@ nav {
     border-radius: 0;
   }
 
-  /* header .logo img {
-    height: 46px;
-  } */
-
   .footer-logo img {
     height: 36px;
   }
 
   .lbox-container {
-    margin-top: 0.2rem;
+    margin-top: 0.6rem;
   }
 
   footer {
@@ -954,10 +818,6 @@ nav {
   body {
     margin: 0;
   }
-
-  /* header {
-    padding-top: 1.4rem;
-  } */
 }
 
 @media (max-width: 400px) {
@@ -965,25 +825,5 @@ nav {
     width: 100%;
   }
 }
-
-/* ==========  NEW NAV BAR MEDIA QUERIES ========= */
-
-/* @media (min-width: 1000px) {
-  .navbar {
-    all: unset;
-    display: block;
-  }
-  .navbar ul {
-    flex-direction: row;
-    gap: 20px;
-  }
-  .navbar ul a {
-    font-size: inherit;
-  }
-  .close-nav,
-  .menu-bar {
-    display: none;
-  }
-} */
 
 /* ==========  DEBUGGING ========= */
