@@ -114,6 +114,10 @@ input[type="submit"]:hover {
   border-radius: 10px 10px 0 0;
 }
 
+button a {
+  color: black;
+}
+
 h1 {
   font-size: 3em;
   text-align: center;
@@ -189,7 +193,6 @@ footer {
 
 /* ========== HEADER ========= */
 
-
 /* ========== NAVIGATION BAR ========= */
 .active {
   color: brown;
@@ -248,7 +251,6 @@ nav li:first-child {
   padding: 1.4rem;
 }
 
-
 .sidebar a {
   width: 100%;
   display: flex;
@@ -276,10 +278,10 @@ nav li:first-child {
   display: none;
 }
 
-.menu-button a:hover, a:active {
+.menu-button a:hover,
+a:active {
   color: #ffeb5e;
 }
-
 
 /* ============ PAGE CONTENT FORMATTING ============ */
 
@@ -706,8 +708,6 @@ nav li:first-child {
 }
 
 @media screen and (max-width: 800px) {
-
-
   .hideOnMobile {
     display: none;
   }
