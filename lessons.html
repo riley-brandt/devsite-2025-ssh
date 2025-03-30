@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lessons | RB Photography</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <!-- =========== BODY START ============ -->
+
+  <body>
+    <div id="container-body-main">
+      <!-- =========== HEADER & NAVIGATION BAR ============ -->
+
+      <header>
+        <!-- ============= NEW NAVIGATION BAR FROM SCRATCH ========== -->
+
+        <nav>
+          <!-- === UNORDERED LIST MOBILE === -->
+
+          <ul class="sidebar">
+            <li onclick="hideSidebar()">
+              <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+
+          <!-- === UNORDERED LIST DESKTOP === -->
+
+          <ul>
+            <li>
+              <a class="logo" href="index.html"
+                ><img alt="Riley Brandt Photography logo"
+              /></a>
+            </li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile">
+              <a href="contact.html">Contact</a>
+            </li>
+            <li class="menu-button" onclick="showSidebar()">
+              <a href="#"
+                ><i class="fa fa-bars fa-2x" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- ====== CONTACT CONTENT CONTAINER ======= -->
+
+      <div class="lessons-container">
+        <div class="lessons-content-left">
+          <div class="card-highlight-2">
+            <i class="fa fa-graduation-cap fa-5x" aria-hidden="true"></i>
+          </div>
+          <h1>Education</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            magni, officia, impedit ducimus quos dolore corporis provident
+            praesentium ea, obcaecati nulla vero asperiores totam repellendus
+            ratione explicabo quibusdam iste mollitia!
+          </p>
+        </div>
+        <div class="lessons-content-right">
+          <h3>The Open Source Photography Course</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            magni, officia, impedit ducimus quos dolore corporis provident
+            praesentium ea, obcaecati nulla vero asperiores totam repellendus
+            ratione explicabo quibusdam iste mollitia!
+          </p>
+
+          <h3>Editing Portraits with FOSS</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            magni, officia, impedit ducimus quos dolore corporis provident
+            praesentium ea, obcaecati nulla vero asperiores totam repellendus
+            ratione explicabo quibusdam iste mollitia!
+          </p>
+        </div>
+      </div>
+
+      <footer>
+        <!-- ====== FOOTER ITEM 1 | Navigation ====== -->
+        <div class="footer-item">
+          <h3>Navigation</h3>
+          <ul>
+            <li>
+              <i class="fa fa-home" aria-hidden="true"></i>
+              <a href="./index.html" class="active">Home</a>
+            </li>
+            <li>
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <a href="./about.html">About</a>
+            </li>
+            <li>
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <i class="fa fa-youtube-play" aria-hidden="true"></i>
+              <a
+                href="https://www.youtube.com/channel/UCt6U6IJ2myOToBFeVL-EaXA/videos"
+                target="_blank"
+                >YouTube</a
+              >
+            </li>
+            <li>
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <a href="https://github.com/riley-brandt" target="_blank"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- ====== FOOTER ITEM 2 | Logo ====== -->
+
+        <div class="footer-logo">
+          <div>
+            <a href="./index.html">
+              <img
+                src="./img/logo/logo-white-775px.webp"
+                alt="Riley Brandt Photography logo"
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ====== SCRIPT LINKS ====== -->
+
+    <!-- Imports the @botpoison/browser script -->
+    <script src="https://unpkg.com/@botpoison/browser" async></script>
+
+    <!-- My Scripts -->
+    <script src="./js/scripts.js" defer></script>
+  </body>
+</html>
