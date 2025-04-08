@@ -242,7 +242,7 @@ nav li:first-child {
   right: 0;
   height: 100vh;
   width: 230px;
-  z-index: 999;
+  z-index: 10;
   background-color: #e4e4e4;
   display: none;
   flex-direction: column;
@@ -283,31 +283,57 @@ a:active {
   color: #ffeb5e;
 }
 
+#overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+  display: none;
+}
+
 /* ============ PAGE CONTENT FORMATTING ============ */
 
 .lessons-container {
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: column; */
-  padding: 2rem;
-  background-color: #e4e4e4;
   margin: 2rem 0.5rem 0rem 0.5rem;
+  /* padding: 1rem; */
+  /* background-color: #e4e4e4; */
 }
 
-.lessons-content-left {
+/* .lessons-content-left {
   background-color: white;
   border-radius: 10px;
-  width: 49%;
+  flex: 40%;
   padding: 1rem;
   margin-right: 1rem;
+}
+
+.lessons-content-left h2 {
+  text-align: center;
 }
 
 .lessons-content-right {
   background-color: white;
   border-radius: 10px;
   padding: 1rem;
+  flex: 58%;
+}
 
-  width: 49%;
+.lessons-content-right > h2 {
+  color: brown;
+} */
+
+.foss-banner {
+  content: url("../img/lessons/banner-foss-course-01.png");
+  width: 98%;
+  height: auto;
+}
+
+.portraits-banner {
+  content: url("../img/lessons/foss-course-02.png");
+  width: 98%;
+  height: auto;
 }
 
 .about-container {
@@ -328,7 +354,7 @@ a:active {
   min-width: 320px;
   background-color: white;
   padding: 1rem;
-  border-radius: 12px;
+  border-radius: 10px;
   height: 100%;
   box-shadow: 1px 2px 2px #c6c6c6;
 }
@@ -694,8 +720,33 @@ a:active {
   }
 }
 
-/* Responsive layout - makes a two column layout */
+/* ========== MEDIA QUERIES START HERE ========= */
+/* ========== ======= 1000px  ======= ========= */
 @media screen and (max-width: 1000px) {
+
+
+  /* .lessons-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .lessons-content-left {
+    width: 100%;
+    border-radius: 0;
+    padding-bottom: 0;
+
+  }
+  
+  .lessons-content-right {
+    width: 100%;
+    border-radius: 0;
+    padding-top: 0;
+  }
+
+  .lessons-hide {
+    display: none;
+  } */
+
   .lbox-column {
     flex: 50%;
     max-width: 50%;
@@ -714,25 +765,29 @@ a:active {
     height: 46px;
   }
 
-  /* .lbox-container {
-    margin-top: 1.5rem;
-  } */
+
 
   body {
     margin: 1rem;
   }
 }
 
-/* Responsive layout - makes a 1 column layout*/
+/* ========== ======= 900px  ======= ========= */
 
 @media screen and (max-width: 900px) {
   .card-column-2 {
     flex: 100%;
     max-width: 99%;
   }
+
 }
 
-@media screen and (max-width: 800px) {
+/* ========== ======= 810px  ======= ========= */
+
+@media screen and (max-width: 810px) {
+
+
+
   .hideOnMobile {
     display: none;
   }
@@ -757,6 +812,9 @@ a:active {
     border-radius: 0;
   }
 }
+
+/* ========== ======= 600px  ======= ========= */
+
 
 @media screen and (max-width: 600px) {
   input[type="submit"] {
@@ -845,10 +903,18 @@ a:active {
   }
 }
 
+/* ========== ======= 400px  ======= ========= */
+
+
 @media (max-width: 400px) {
   .sidebar {
     width: 100%;
   }
+
+  /* .lessons-container {
+    margin: 1.1rem 0 0 0;
+  } */
+
 }
 
 /* ==========  DEBUGGING ========= */

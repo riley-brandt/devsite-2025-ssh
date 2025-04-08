@@ -6,30 +6,19 @@ The development website for rileybrandt.com.
 
 ## To Do List
 
-- Code the Hamburger Menu button
-- About page contents
-- CSS sytling of about page blocks
-- Finalise colour scheme
-- Add contact form backend
-- Finish Contact page blurb
+- Add a close on exit to the responsive navbar
+- Finish the homepage images, arrangement, and captions
+- Write the About page contents
+- Style the about page blocks
 - Take a new headshot/selfie for the About page
 - Fix all the media queries/responsive layouts
 
 ## Required for live push
 
-- Working contact form
-- A lessons page
-- Working hamburger menu
 - Home, About, Contact (Portfolio page can be added later)
-- Blog: FOSS photography workflow post
-
-## Pages to Code
-
-- Homepage
-- About
-- Contact
-- Lessons
-- FOSS photography workflow blog post
+- A Lessons page
+- Blog archive: FOSS photography workflow post
+- Test webpages with verification site
 
 ## Post launch ideas
 
