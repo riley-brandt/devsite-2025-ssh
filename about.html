@@ -27,11 +27,11 @@
 
           <ul class="sidebar">
             <li onclick="hideSidebar()">
-              <a href="#"><i class="fa fa-times " aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
             </li>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html" class="active">About</a></li>
-            <li><a href="contact.html">Contact</a></li>          
+            <li><a href="contact.html">Contact</a></li>
           </ul>
 
           <!-- === UNORDERED LIST DESKTOP === -->
@@ -43,19 +43,22 @@
               /></a>
             </li>
             <li class="hideOnMobile"><a href="index.html">Home</a></li>
-            <li class="hideOnMobile"><a href="about.html" class="active">About</a></li>
+            <li class="hideOnMobile">
+              <a href="about.html" class="active">About</a>
+            </li>
             <li class="hideOnMobile">
               <a href="contact.html">Contact</a>
             </li>
             <li class="menu-button" onclick="showSidebar()">
-              <a href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+              <a href="#"
+                ><i class="fa fa-bars fa-2x" aria-hidden="true"></i
+              ></a>
             </li>
           </ul>
         </nav>
 
         <!-- ====== OVERLAY FOR MOBILE SIDEBAR ===== -->
         <div id="overlay" onclick="hideSidebar()"></div>
-        
       </header>
 
       <!-- ====== ABOUT CONTENT CONTAINER ======= -->
@@ -92,6 +95,42 @@
         <div class="about-containers-main">
           <div class="about-containers">
             <div class="about-inner-content">
+              <!-- ====== BULLET POINT CARDS || ALT GRID METHOD ====== -->
+              <div class="card-container-2">
+                <div class="card-gallery-2">
+                  <div class="card-column-2">
+                    <div class="card-highlight-2">
+                      <i
+                        class="fa fa-camera-retro fa-5x"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <!-- <img src="./img/homepage/hp_12_thumb_concert_600x900px.jpg" /> -->
+                    <h2>17 Years Experience</h2>
+                    <p>
+                      I’ve been fortunate enough to work as a professional
+                      photographer for over 17 years now. My experience includes
+                      photojournalism, portraiture, events, and many years at
+                      the University of Calgary covering post-secondary life.
+                    </p>
+                  </div>
+                  <div class="card-column-2">
+                    <div class="card-highlight-2">
+                      <i class="fa fa-globe fa-5x" aria-hidden="true"></i>
+                    </div>
+                    <h2>Internationally Published</h2>
+                    <p>
+                      My photographs have been published around the world. Some
+                      highlights include:
+                      <i
+                        >The Wall Street Journal, The Washington Post, The Globe
+                        and Mail, The National Post, CBC News</i
+                      >, as well as various billboards and magazines.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               <div class="about-container-left">
                 <h3>Published Work</h3>
                 <!-- <div class="card-highlight-2">
