@@ -3,14 +3,11 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"); */
 
 :root {
-
-
-  
   --bg-white: hsl(0, 0%, 100%);
   --bg-grey: hsl(0, 0%, 89%);
   --yellow: hsl(53, 100%, 68%);
   --navy-blue: hsl(234, 14%, 18%);
-
+  --orange-test: hsl(42.073174, 100%, 68%);
 
   /* --accent-yellow: hsl(60, 80%, 71%);
   --accent-purple: hsl(250, 14%, 40%);
@@ -151,6 +148,9 @@ footer {
   padding: 1rem 4rem 2rem 4rem;
   background-color: var(--navy-blue);
   border-top: 4px solid var(--yellow);
+
+  /* border-top: 4px solid var(--orange-test); */
+
   color: white;
   border-radius: 0 0 10px 10px;
   margin: 0rem 0.5rem 0 0.5rem;
@@ -731,8 +731,6 @@ a:active {
 /* ========== MEDIA QUERIES START HERE ========= */
 /* ========== ======= 1000px  ======= ========= */
 @media screen and (max-width: 1000px) {
-
-
   /* .lessons-container {
     flex-direction: column;
     padding: 1rem;
@@ -773,8 +771,6 @@ a:active {
     height: 46px;
   }
 
-
-
   body {
     margin: 1rem;
   }
@@ -787,15 +783,11 @@ a:active {
     flex: 100%;
     max-width: 99%;
   }
-
 }
 
 /* ========== ======= 810px  ======= ========= */
 
 @media screen and (max-width: 810px) {
-
-
-
   .hideOnMobile {
     display: none;
   }
@@ -822,7 +814,6 @@ a:active {
 }
 
 /* ========== ======= 600px  ======= ========= */
-
 
 @media screen and (max-width: 600px) {
   input[type="submit"] {
@@ -913,7 +904,6 @@ a:active {
 
 /* ========== ======= 400px  ======= ========= */
 
-
 @media (max-width: 400px) {
   .sidebar {
     width: 100%;
@@ -922,7 +912,6 @@ a:active {
   /* .lessons-container {
     margin: 1.1rem 0 0 0;
   } */
-
 }
 
 /* ==========  DEBUGGING ========= */
