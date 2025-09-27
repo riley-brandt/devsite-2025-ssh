@@ -348,6 +348,13 @@ a:active {
   margin: 2rem 0.5rem 0rem 0.5rem;
 }
 
+.about-content-bg {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  background-color: #e4e4e4;
+}
+
 .contact-form-container {
   display: flex;
   flex-wrap: wrap;
@@ -447,6 +454,7 @@ a:active {
 .about-profile {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 
 .about-photo {
