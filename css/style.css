@@ -894,7 +894,7 @@ a:active {
 
 /* Responsive layout - makes a two column layout */
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1300px) {
   .about-profile-photo img {
     width: 80%;
     /* border-radius: 12px; */
@@ -948,10 +948,10 @@ a:active {
     width: 320px;
   }
 
-  .card-column-2 {
+  /* .card-column-2 {
     flex: 50%;
     max-width: 48%;
-  }
+  } */
 
   .footer-logo img {
     height: 46px;
@@ -964,7 +964,7 @@ a:active {
 
 /* ========== ======= 900px  ======= ========= */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 922px) {
   .card-column-2 {
     flex: 100%;
     max-width: 99%;
