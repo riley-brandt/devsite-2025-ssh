@@ -8,15 +8,6 @@
   --yellow: hsl(53, 100%, 68%);
   --navy-blue: hsl(234, 14%, 18%);
   --orange-test: hsl(42.073174, 100%, 68%);
-
-  /* --accent-yellow: hsl(60, 80%, 71%);
-  --accent-purple: hsl(250, 14%, 40%);
-  --dark-purple: hsl(250, 16%, 30%);
-  --black-purple: hsl(251, 16%, 21%);
-  --medium-black-purple: hsl(235.38461, 11%, 23%);
-  --medium-black: hsl(235.38461, 10%, 25%);
-  --black-almost: hsl(0, 0%, 15%);
-  --bg-grey: hsl(240, 5%, 96%); */
 }
 
 *,
@@ -310,32 +301,7 @@ a:active {
   display: flex;
   flex-wrap: wrap;
   margin: 2rem 0.5rem 0rem 0.5rem;
-  /* padding: 1rem; */
-  /* background-color: #e4e4e4; */
 }
-
-/* .lessons-content-left {
-  background-color: white;
-  border-radius: 10px;
-  flex: 40%;
-  padding: 1rem;
-  margin-right: 1rem;
-}
-
-.lessons-content-left h2 {
-  text-align: center;
-}
-
-.lessons-content-right {
-  background-color: white;
-  border-radius: 10px;
-  padding: 1rem;
-  flex: 58%;
-}
-
-.lessons-content-right > h2 {
-  color: brown;
-} */
 
 .foss-banner {
   content: url("../img/lessons/banner-foss-course-01.png");
@@ -460,57 +426,25 @@ a:active {
 
 /* ======== HOME PAGE BIO & Contact PROFILE ========== */
 
-.home-about-profile {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1rem 0.5rem 1rem 0.5rem;
-}
-
-.home-about-left {
-  flex: 30%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 3rem 2rem 3rem;
-  border-radius: 0 12px 12px 0;
-  background-color: var(--navy-blue);
-  border-left: 4px solid var(--yellow);
-}
-
-.home-about-middle {
-  flex: 30%;
+.home-bio-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0.5rem;
+}
+
+.home-bio-text {
+  font-size: 1.8rem;
   text-align: center;
-  border-radius: 12px 0 0 12px;
-  background-color: var(--bg-grey);
-  padding: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  padding: 1rem 6rem 2.2rem 6rem;
+  background-color: var(--navy-blue);
+  color: white;
+  border-radius: 10px;
 }
 
-.home-about-left p {
-  font-size: 1.6rem;
-}
-
-.home-about-left h6 {
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: var(--yellow);
-  letter-spacing: 2px;
-  margin-right: 1rem;
-}
-
-.home-about-left h3 {
-  font-size: 2.4rem;
-  color: var(--yellow);
-}
-
-.home-about-left button {
+.home-bio-text button {
   background-color: var(--yellow);
-  margin-top: 2.5rem;
   margin-bottom: 1rem;
   border: none;
   padding: 15px 32px;
@@ -521,44 +455,12 @@ a:active {
   border-radius: 10px;
   transition-duration: 0.4s;
   box-shadow:
-    0 8px 8px 0 rgba(0, 0, 0, 0.2),
+    0 8px 16px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.home-about-left button:hover {
-  background-color: var(--navy-blue);
-  color: white;
-}
-
-.home-about-right {
-  flex: 30%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 3rem 2rem 3rem;
-  border-radius: 0 12px 12px 0;
-  background-color: var(--navy-blue);
-  border-left: 4px solid var(--yellow);
-}
-
-.home-about-right p {
-  font-size: 1.2rem;
-  font-family: sans-serif;
-  /* font-weight: lighter; */
-  color: white;
-}
-
-.home-about-right h6 {
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: var(--yellow);
-  letter-spacing: 2px;
-  /* margin-right: 1rem; */
-}
-
-.home-about-right h3 {
-  font-size: 2.4rem;
-  color: var(--yellow);
+.home-bio-text button:hover {
+  background-color: #e4e4e4;
 }
 
 /* ======== ABOUT PAGE BIO PROFILE ========== */
@@ -666,7 +568,7 @@ a:active {
 
 /* ========== HOMEPAGE INSTA | PHOTO AND TEXT ========= */
 
-.insta-profile {
+/* .insta-profile {
   display: flex;
   flex-wrap: wrap;
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -721,7 +623,7 @@ a:active {
   min-height: 420px;
   border-radius: 0 10px 10px 0;
   background-image: url(../img/homepage/calgary-temp.jpg);
-}
+} */
 
 /* .insta-photo-02 {
   flex: 30%;
@@ -969,9 +871,9 @@ a:active {
     border-radius: 0;
   }
 
-  .insta-text {
+  /* .insta-text {
     border-radius: 0;
-  }
+  } */
 }
 
 /* ========== ======= 600px  ======= ========= */
@@ -1038,9 +940,9 @@ a:active {
     border-radius: 0;
   }
 
-  .insta-text {
+  /* .insta-text {
     border-radius: 0;
-  }
+  } */
 
   .footer-logo img {
     height: 36px;
