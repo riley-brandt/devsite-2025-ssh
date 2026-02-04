@@ -437,10 +437,13 @@ a:active {
 .home-bio-text {
   font-size: 1.8rem;
   text-align: center;
-  padding: 1rem 6rem 2.2rem 6rem;
+  padding: 1.2rem 6rem 2.2rem 6rem;
+  border-top: solid 4px var(--yellow);
   background-color: var(--navy-blue);
   color: white;
   border-radius: 10px;
+
+  /* border-radius: 0 0 10px 10px; */
 }
 
 .home-bio-text button {
@@ -866,10 +869,10 @@ a:active {
     border-radius: 0 0 12px 12px;
   }
 
-  .insta-photo {
+  /* .insta-photo {
     border-left: none;
     border-radius: 0;
-  }
+  } */
 
   /* .insta-text {
     border-radius: 0;
@@ -934,11 +937,11 @@ a:active {
     padding: 0.1rem 0 0 0;
   }
 
-  .insta-photo {
+  /* .insta-photo {
     border-top: solid 4px var(--yellow);
     border-left: none;
     border-radius: 0;
-  }
+  } */
 
   /* .insta-text {
     border-radius: 0;
