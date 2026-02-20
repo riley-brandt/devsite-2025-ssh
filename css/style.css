@@ -337,12 +337,15 @@ a:active {
 }
 
 .card-left-txt h2 {
+  color: var(--yellow);
   text-align: center;
 }
 
 .contact-left-inner-bg {
   min-width: 320px;
-  background-color: white;
+  background-color: var(--navy-blue);
+  border-top: 6px solid var(--yellow);
+  color: white;
   padding: 1rem;
   border-radius: 10px;
   height: 100%;
@@ -355,11 +358,10 @@ a:active {
   flex-direction: column;
   background-color: #e4e4e4;
   padding: 2rem;
-  /* border-radius: 12px 0 0 0; */
 }
 
 .contact-form-left-container a {
-  color: var(--navy-blue);
+  color: white;
 }
 
 .contact-form-fields {
@@ -448,6 +450,7 @@ a:active {
 
 .home-bio-text button {
   background-color: var(--yellow);
+  color: black;
   margin-bottom: 1rem;
   border: none;
   padding: 15px 32px;
@@ -575,11 +578,6 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 0.5rem; */
-  /* background-color: var(--bg-grey); */
-  /* border-radius: 10px 10px 0px 0px; */
-  /* margin: 0.5rem 0.5rem 0 0.5rem; */
-  /* margin: 0rem; */
 }
 
 .card-gallery-2 {
@@ -598,8 +596,6 @@ a:active {
   border-radius: 10px;
   box-shadow: 1px 2px 2px #c6c6c6;
   border-top: solid 6px var(--yellow);
-  /* border-top: solid 6px var(--orange-test); */
-
 }
 
 .card-column-2 > h2 {
@@ -610,12 +606,20 @@ a:active {
 .card-highlight-2 {
   width: 100%;
   height: 100px;
-  /* background-color: var(--yellow); */
   background-color: var(--navy-blue);
   align-content: center;
   text-align: center;
-  /* color: orangered; */
 }
+
+.contact-card-left {
+  /* width: 100%;
+  height: auto; */
+  color: white;
+  align-content: center;
+  text-align: center;
+}
+
+
 
 /* ====== ABOUT DUAL BOX LAYOUT ====== */
 
@@ -847,6 +851,7 @@ a:active {
 
   .contact-form-container {
     padding: 0.1rem 0 0 0;
+    margin-top: 1rem;
   }
 
   .footer-logo img {
