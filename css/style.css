@@ -433,7 +433,9 @@ a:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0.5rem;
+  margin: 0.5rem 0.5rem 0rem 0.5rem;
+  background-color: var(--bg-grey);
+  padding: 1rem 1rem 0rem 1rem;
 }
 
 .home-bio-text {
@@ -483,18 +485,18 @@ a:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 12px 0 0 12px;
+  /* border-radius: 12px 0 0 12px; */
   background-color: #e4e4e4;
   padding: 2rem 1rem 1rem 1rem;
 }
 
-.about-photo-pic img {
+/* .about-photo-pic img {
   width: 200px;
   border-radius: 50%;
   background-color: white;
   padding: 0.5rem;
   box-shadow: 1px 2px 2px #c6c6c6;
-}
+} */
 
 .about-profile-text {
   flex: 50%;
@@ -502,7 +504,7 @@ a:active {
   display: flex;
   flex-direction: column;
   padding: 1rem 3rem 2rem 3rem;
-  border-radius: 0 12px 12px 0;
+  /* border-radius: 0 12px 12px 0; */
   background-color: var(--navy-blue);
   border-left: 4px solid var(--yellow);
 }
@@ -578,18 +580,25 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* align-items: stretch; */
 }
 
 .card-gallery-2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: var(--bg-grey);
+  /* padding-top: 1rem;
+  padding-bottom: 0.5rem; */
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .card-column-2 {
   flex: 25%;
-  max-width: 23.8%;
-  padding: 1em;
+  max-width: 23.7%;
+  padding: 0rem 1rem 0.5rem 1rem;
   background-color: var(--navy-blue);
   color: white;
   margin: 0 0.5em 0.5em 0.5em;
@@ -601,6 +610,7 @@ a:active {
 .card-column-2 > h2 {
   text-align: center;
   color: var(--yellow);
+  font-size: 1.2rem;
 }
 
 .card-highlight-2 {
@@ -609,6 +619,8 @@ a:active {
   background-color: var(--navy-blue);
   align-content: center;
   text-align: center;
+  /* padding: 0;
+  margin: 0; */
 }
 
 .contact-card-left {
@@ -618,8 +630,6 @@ a:active {
   align-content: center;
   text-align: center;
 }
-
-
 
 /* ====== ABOUT DUAL BOX LAYOUT ====== */
 
@@ -649,7 +659,6 @@ a:active {
   text-align: center;
   color: var(--yellow);
 }
-
 
 /* ========== LIGHTBOX GALLERY ========= */
 /* ========== MOSAIC FLEX WRAP ========= */
@@ -686,7 +695,13 @@ a:active {
     flex: 25%;
     max-width: 23.6%;
   }
-  
+}
+
+@media screen and (max-width: 1306px) {
+  .card-column-2 {
+    flex: 25%;
+    max-width: 23.5%;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -694,7 +709,6 @@ a:active {
     flex: 25%;
     max-width: 23.3%;
   }
-  
 }
 
 /* ========== RESPONSIVE LAYOUT, 2 COLUMN - 50% FLEX ==============*/
@@ -718,20 +732,26 @@ a:active {
   }
 }
 
-@media screen and (max-width: 1122px) {
-
-
+@media screen and (max-width: 1155px) {
   .card-column-2 {
     flex: 50%;
     max-width: 48%;
   }
-
 }
+
+/* @media screen and (max-width: 1066px) {
+
+
+  .card-column-2 {
+    flex: 50%;
+    max-width: 47%;
+  }
+
+} */
 
 /* ========== ======= 1000px  ======= ========= */
 
 @media screen and (max-width: 1000px) {
-
   .lbox-column {
     flex: 50%;
     max-width: 50%;
@@ -749,18 +769,11 @@ a:active {
     margin: 1rem;
   }
 
-}
-
-@media screen and (max-width: 892px) {
-
-
   .card-column-2 {
     flex: 50%;
-    max-width: 47.6%;
+    max-width: 47%;
   }
-
 }
-
 
 /* ========== ======= 810px  ======= ========= */
 
@@ -778,29 +791,26 @@ a:active {
 
   .about-profile-text {
     border-radius: 0 0 12px 12px;
-  }  
+  }
+}
 
-
+@media screen and (max-width: 750px) {
   .card-column-2 {
     flex: 100%;
     max-width: 99%;
   }
-
 }
-
-
-
-
-
-
-
-
 
 /* ========== ======= 600px  ======= ========= */
 
 @media screen and (max-width: 600px) {
   input[type="submit"] {
     width: 100%;
+  }
+
+  .card-column-2 {
+    flex: 100%;
+    max-width: 99%;
   }
 
   #container-body-main {
