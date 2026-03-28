@@ -810,6 +810,15 @@ a:active {
     margin: 0.5rem 0rem 0rem 0rem;
   }
 
+  .home-bio-text {
+    padding: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .home-bio-text button {
+    margin-top: 1rem;
+  }
+
   .card-column-2 {
     flex: 100%;
     max-width: 99%;
