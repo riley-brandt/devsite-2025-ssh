@@ -446,8 +446,6 @@ a:active {
   background-color: var(--navy-blue);
   color: white;
   border-radius: 10px;
-
-  /* border-radius: 0 0 10px 10px; */
 }
 
 .home-bio-text button {
@@ -808,9 +806,18 @@ a:active {
     width: 100%;
   }
 
+  .home-bio-box {
+    margin: 0.5rem 0rem 0rem 0rem;
+  }
+
   .card-column-2 {
     flex: 100%;
     max-width: 99%;
+  }
+
+  .card-gallery-2 {
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 
   #container-body-main {
