@@ -578,7 +578,9 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* align-items: stretch; */
+  background-color: var(--bg-grey);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .card-gallery-2 {
@@ -586,8 +588,6 @@ a:active {
   flex-wrap: wrap;
   justify-content: center;
   background-color: var(--bg-grey);
-  /* padding-top: 1rem;
-  padding-bottom: 0.5rem; */
   padding: 1rem 0.5rem 0.5rem 0.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -617,8 +617,70 @@ a:active {
   background-color: var(--navy-blue);
   align-content: center;
   text-align: center;
-  /* padding: 0;
-  margin: 0; */
+}
+
+/* === NEW HOMEPAGE INFO CARDS ==== */
+
+.info-cards-home-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-grey);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.info-cards-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.info-cards-responsive {
+  flex: 25%;
+  max-width: 23.7%;
+  margin: 0 0.5em 0.5em 0.5em;
+  border-radius: 12px;
+  /* border-radius: 10px 10px 0 0; */
+  box-shadow: 1px 2px 2px #c6c6c6;
+  background-color: white;
+  min-width: 250px;
+  /* align-items: flex-start;
+  display: flex; */
+  /* justify-content: baseline; */
+}
+
+/* === INFO CARDS ICON AND HEADER TEXT ==== */
+
+.info-cards-header {
+  /* width: 100%; */
+  /* line-height: 0px; */
+  background-color: var(--navy-blue);
+  color: var(--yellow);
+  border-top: solid 6px var(--yellow);
+  text-align: center;
+  border-radius: 12px 12px 0 0;
+  padding-bottom: 0.4rem;
+}
+
+.info-cards-header > i {
+  color: white;
+}
+
+.info-cards-header > h2 {
+  font-size: 1.2rem;
+  margin-top: -0.5rem;
+  /* line-height: 0rem; */
+}
+
+/* === INFO CARDS TEXT BOTTOM CONTENT ==== */
+
+.card-text-box {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .contact-card-left {
