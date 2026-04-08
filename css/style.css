@@ -345,6 +345,8 @@ a:active {
   min-width: 320px;
   background-color: var(--navy-blue);
   border-top: 6px solid var(--yellow);
+  border-bottom: solid 6px var(--yellow);
+
   color: white;
   padding: 1rem;
   border-radius: 10px;
