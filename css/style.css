@@ -644,20 +644,15 @@ a:active {
   max-width: 23.7%;
   margin: 0 0.5em 0.5em 0.5em;
   border-radius: 12px;
-  /* border-radius: 10px 10px 0 0; */
   box-shadow: 1px 2px 2px #c6c6c6;
   background-color: white;
-  min-width: 250px;
-  /* align-items: flex-start;
-  display: flex; */
-  /* justify-content: baseline; */
+  min-width: 200px;
 }
 
 /* === INFO CARDS ICON AND HEADER TEXT ==== */
 
 .info-cards-header {
-  /* width: 100%; */
-  /* line-height: 0px; */
+  width: 100%;
   background-color: var(--navy-blue);
   color: var(--yellow);
   border-top: solid 6px var(--yellow);
@@ -755,17 +750,37 @@ a:active {
     flex: 25%;
     max-width: 23.6%;
   }
+
+  .info-cards-responsive {
+    flex: 25%;
+    max-width: 23.6%;
+  }
 }
 
-@media screen and (max-width: 1306px) {
+@media screen and (max-width: 1310px) {
   .card-column-2 {
     flex: 25%;
     max-width: 23.5%;
   }
+
+  .info-cards-responsive {
+    flex: 25%;
+    max-width: 23.5%;
+  }
+
+  /* .info-cards-responsive {
+    flex: 25%;
+    max-width: 20%;
+  } */
 }
 
 @media screen and (max-width: 1280px) {
   .card-column-2 {
+    flex: 25%;
+    max-width: 23.3%;
+  }
+
+  .info-cards-responsive {
     flex: 25%;
     max-width: 23.3%;
   }
@@ -790,10 +805,20 @@ a:active {
     flex: 50%;
     max-width: 48.4%;
   }
+
+  .info-cards-responsive {
+    flex: 50%;
+    max-width: 48.4%;
+  }
 }
 
 @media screen and (max-width: 1155px) {
   .card-column-2 {
+    flex: 50%;
+    max-width: 48%;
+  }
+
+  .info-cards-responsive {
     flex: 50%;
     max-width: 48%;
   }
@@ -833,6 +858,11 @@ a:active {
     flex: 50%;
     max-width: 47%;
   }
+
+  .info-cards-responsive {
+    flex: 50%;
+    max-width: 47%;
+  }
 }
 
 /* ========== ======= 810px  ======= ========= */
@@ -859,6 +889,11 @@ a:active {
     flex: 100%;
     max-width: 99%;
   }
+
+  .info-cards-responsive {
+    flex: 100%;
+    max-width: 99%;
+  }
 }
 
 /* ========== ======= 600px  ======= ========= */
@@ -882,6 +917,11 @@ a:active {
   }
 
   .card-column-2 {
+    flex: 100%;
+    max-width: 99%;
+  }
+
+  .info-cards-responsive {
     flex: 100%;
     max-width: 99%;
   }
