@@ -444,7 +444,9 @@ a:active {
   font-size: 1.8rem;
   text-align: center;
   padding: 1.2rem 6rem 2.2rem 6rem;
-  border-top: solid 4px var(--yellow);
+  border-top: solid 6px var(--yellow);
+  /* border-right: solid 6px var(--yellow); */
+
   background-color: var(--navy-blue);
   color: white;
   border-radius: 10px;
@@ -905,6 +907,20 @@ a:active {
 
   .home-bio-box {
     margin: 0.5rem 0rem 0rem 0rem;
+  }
+
+  .info-cards-home-box {
+    margin: 0;
+  }
+
+  .info-cards-responsive {
+    margin: 0 1em 1em 1em;
+  }
+
+  .info-cards-flex-container {
+    padding: 1rem 0rem 0.5rem 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 
   .home-bio-text {
