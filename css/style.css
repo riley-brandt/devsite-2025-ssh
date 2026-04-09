@@ -639,8 +639,6 @@ a:active {
   flex-wrap: wrap;
   justify-content: center;
   padding: 1rem 0.5rem 0.5rem 0.5rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 
 .info-cards-responsive {
@@ -865,6 +863,10 @@ a:active {
     flex: 50%;
     max-width: 47%;
   }
+
+  .info-cards-flex-container {
+    padding: 1rem 0rem 0.5rem 0rem;
+  }
 }
 
 /* ========== ======= 810px  ======= ========= */
@@ -915,12 +917,6 @@ a:active {
 
   .info-cards-responsive {
     margin: 0 1em 1em 1em;
-  }
-
-  .info-cards-flex-container {
-    padding: 1rem 0rem 0.5rem 0rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
   }
 
   .home-bio-text {
